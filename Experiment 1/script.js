@@ -3,7 +3,7 @@ let randomButton = document.querySelector("#randomize");
 
 randomButton.addEventListener("click", function() {
     background(73);
-    generateStacks(5);
+    generateStacks(random(1,50 ));
 });
 
 function setup(){
@@ -11,7 +11,7 @@ function setup(){
     createCanvas(800, 500);
     noStroke();
     background(73);
-    generateStacks(5);
+    generateStacks(stackAmount = random(1,50 ));
 }
 
 function draw(){
